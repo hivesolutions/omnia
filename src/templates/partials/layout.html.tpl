@@ -7,12 +7,6 @@
     {% endblock %}
 </head>
 <body class="ux">
-    <div id="overlay"></div>
-    <div id="header">
-        {% block header %}
-            <h1>{% block name %}{% endblock %}</h1>
-        {% endblock %}
-    </div>
     <div id="content">{% block content %}{% endblock %}</div>
     {% include "partials/footer.html.tpl" %}
 </body>
