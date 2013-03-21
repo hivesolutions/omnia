@@ -81,4 +81,4 @@ def base():
     )
 
 if __name__ == "__main__":
-    quorum.run()
+    quorum.run(server = "waitress")
