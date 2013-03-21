@@ -59,10 +59,10 @@ SCOPE = (
 scope string for the oauth value """
 
 app = flask.Flask(__name__)
-app.config["PERMANENT_SESSION_LIFETIME"] = datetime.timedelta(31)
 quorum.load(
     app,
-    name = "omnia.debug"
+    name = "omnia.debug",
+    PERMANENT_SESSION_LIFETIME = datetime.timedelta(31)
 )
 
 @app.route("/", methods = ("GET",))
