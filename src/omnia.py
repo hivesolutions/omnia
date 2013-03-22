@@ -58,10 +58,9 @@ SCOPE = (
 """ The list of permission to be used to create the
 scope string for the oauth value """
 
-app = flask.Flask(__name__)
-quorum.load(
-    app,
-    name = "omnia.debug",
+app = quorum.load(
+    name = __name__,
+    logger = "omnia.debug",
     PERMANENT_SESSION_LIFETIME = datetime.timedelta(31)
 )
 
