@@ -55,7 +55,7 @@ SCOPE = (
     "documents.signed_document.submit_at",
     "analytics.sale_snapshot.list"
 )
-""" The list of permission to be used to create the
+""" The list of permissions to be used to create the
 scope string for the oauth value """
 
 app = quorum.load(
