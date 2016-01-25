@@ -23,5 +23,4 @@
 // __copyright__ = Copyright (c) 2008-2015 Hive Solutions Lda.
 // __license__   = GNU General Public License (GPL), Version 3
 
-jQuery(document).ready(function() {
-});
+jQuery(document).ready(function() {});
